@@ -140,7 +140,7 @@
 
         <!-- form -->
         <form action="#" class="form">
-          <h2 class="text-center">Registration Form</h2>
+          <h2 class="text-center">Biodata</h2>
 
           <!-- Progress Bar  -->
           <div class="progressbar">
@@ -154,17 +154,79 @@
 
           <!-- Form item - Basic -->
           <div class="form-step form-step-active">
-            <div class="input-group">
-              <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName" />
+            <div class="row">
+              <div class="col-lg-6">
+                <label for="nisn">NISN</label>
+                <input class="form-control" type="text" name="nisn" id="nisn" placeholder="Masukkan NISN anda"/>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="name">Nama Lengkap</label>
+                  <input class="form-control" type="text" name="name" id="name" placeholder="Masukkan Nama Lengkap Anda"/>
+                </div>
+              </div>
             </div>
-            <div class="input-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" id="lastName" />
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="tempatLahir">Tempat Lahir</label>
+                  <input class="form-control" type="text" name="tempatLahir" id="tempatLahir" placeholder="Masukkan Tempat Lahir Anda"/>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="tanggalLahir">Tanggal Lahir</label>
+                  <input class="form-control" type="date" name="tanggalLahir" id="tanggalLahir" />
+                </div>
+              </div>
             </div>
-            <div class="input-group">
-              <label for="dob">Date of Birth</label>
-              <input type="date" name="dob" id="dob" />
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="hpSiswa">No. HP Siswa</label>
+                  <input class="form-control" type="text" name="hpSiswa" id="hpSiswa" placeholder="Masukkan No. HP Siswa"/>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="hpOrangtua">No. HP Orang Tua</label>
+                  <input class="form-control" type="text" name="hpOrangtua" id="hpOrangtua" placeholder="Masukkan No. HP Orang Tua Anda"/>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <label for="jenisKelamin">Jenis Kelamin</label>
+                <select class="form-control" name="jenisKelamin" id="jenisKelamin">
+                  <option>--</option>
+                  <option>Laki-laki</option>
+                  <option>Perempuan</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <label for="agama">Agama</label>
+                <select class="form-control" name="agama" id="agama">
+                  <option>--</option>
+                  <option>Islam</option>
+                  <option>Kristen</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <label for="alamat">Alamat</label>
+                  <input class="form-control" type="text" name="alamat" id="alamat" placeholder="Masukkan Alamat Anda"/>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">Foto Diri</label>
+                  <input class="form-control" class="form-control" type="file" id="formFile">
+                </div>
+              </div>
             </div>
             <div class="">
               <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
