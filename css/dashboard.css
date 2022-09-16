@@ -210,6 +210,11 @@ label {
 .input-group {
   margin: 0.5rem 0;
 }
+
+.form-control {
+  height: 50px;
+}
+
 .form-step {
   display: none;
   transform-origin: top;
