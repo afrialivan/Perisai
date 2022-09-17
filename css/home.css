@@ -187,6 +187,13 @@ p {
     justify-content: center;
     flex-wrap: nowrap;
   }
+
+  .gambar {
+    /* margin-left: 60px; */
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width:  767.98px) {

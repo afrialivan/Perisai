@@ -25,11 +25,10 @@ body {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767.98px) {
-  .sidebar {
-    top: 5rem;
-  }
+.side .nav-link {
+  font-size: 20px;
 }
+
 
 .sidebar-sticky {
   height: calc(100vh - 48px);
@@ -112,16 +111,34 @@ body {
  padding-left: 40px;
 }
 
-.sekul {
-  height: 280px;
+
+
+@media (min-width: 850px) {
+  .sekul {
+    height: 280px;
+  }
+  
+  .sekul2 {
+    height: 235px;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
 }
 
-.sekul2 {
-  height: 235px;
-}
-@media (max-width: 767.98px) {
+@media (max-width: 850px) {
+  .sidebar {
+    top: 5rem;
+  }
+
   th, td {
     font-size: 15px;
+  }
+
+  .brand {
+    position: absolute;
+    font-size: 23px;
   }
 
   /* .samaDengan {

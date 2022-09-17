@@ -21,15 +21,10 @@ body {
   /* rtl:remove */
   left: 0;
   z-index: 100; /* Behind the navbar */
-  padding: 48px 0 0; /* Height of navbar */
+  padding: 9px 0 0; /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767.98px) {
-  .sidebar {
-    top: 5rem;
-  }
-}
 
 .sidebar-sticky {
   height: calc(100vh - 48px);
@@ -259,9 +254,32 @@ label {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
 }
 
+.side .nav-link {
+  font-size: 20px;
+}
+
 /* Responsive Style */
 @media (max-width: 850px) {
   .form {
       width: 100vw;
+  }
+
+  .sidebar {
+    top: 5rem;
+  }
+
+  th, td {
+    font-size: 15px;
+  }
+
+  .brand {
+    position: absolute;
+    font-size: 23px;
+  }
+}
+
+@media (min-width:  850px) {
+  .brand {
+    font-size: 20px;
   }
 }
