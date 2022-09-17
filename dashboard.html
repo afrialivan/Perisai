@@ -11,20 +11,22 @@
   <!-- My CSS -->
   <link href="css/dashboard.css" rel="stylesheet">
 </head>
-
 <body>
-
   <header class="p-1 mb-3 border-bottom  navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+    <!-- <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
       data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
+    <button class="navbar-toggler position-absolute collapse d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+            aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-light text-decoration-none">
           PPDB
         </a>
-        <div class="dropdown text-end">
+        <div class="dropdown d-block ms-auto">
           <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
@@ -51,37 +53,13 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
                 <span data-feather="home" class="align-text-bottom"></span>
-                Dashboard
+                Biodata
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Orders
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                Products
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="users" class="align-text-bottom"></span>
-                Customers
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-                Reports
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="layers" class="align-text-bottom"></span>
-                Integrations
               </a>
             </li>
           </ul>
@@ -97,25 +75,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file-text" class="align-text-bottom"></span>
-                Current month
+                Data Siswa Baru
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file-text" class="align-text-bottom"></span>
-                Last quarter
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text" class="align-text-bottom"></span>
-                Social engagement
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text" class="align-text-bottom"></span>
-                Year-end sale
+                Edit Akun
               </a>
             </li>
           </ul>
@@ -134,7 +100,6 @@
             <div class="progress-step" data-title="Biodata Asal Sekolah"></div>
             <div class="progress-step" data-title="Nilai Raport"></div>
             <div class="progress-step" data-title="Jalur Pendaftaran"></div>
-            <div class="progress-step" data-title="Kode Referral"></div>
           </div>
 
           <!-- Form item - Basic -->
@@ -208,24 +173,43 @@
                 </div>
               </div>
             </div>
-            <div class="">
-              <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+            <div class="mb-3">
+              <a href="#" class="btn btn-next ml-auto rounded-3" style="width: 450px;">Next</a>
             </div>
           </div>
 
           <!-- Form item - Contact -->
           <div class="form-step">
-            <div class="input-group">
-              <label for="username">Username</label>
-              <input type="text" name="username" id="username" />
+            <div class="row mb-3">
+              <div class="col-lg-6">
+                <label for="sekolah">Asal Sekolah</label>
+                <input type="text" name="sekolah" id="sekolah" class="form-control" placeholder="Masukkan Asal Sekolah Anda" />
+              </div>
+              <div class="col-lg-6">
+                <label for="alamatSekolah">Alamat Sekolah</label>
+                <input type="text" name="alamatSekolah" id="alamatSekolah" class="form-control" placeholder="Masukkan Alamat Sekolah Asal Anda" />
+              </div>
             </div>
-            <div class="input-group">
-              <label for="email">Email Address</label>
-              <input type="text" name="email" id="email" />
+            <div class="mb-3">
+              <label for="provinsiSekolah">Provinsi Sekolah</label>
+              <select class="form-control" name="provinsiSekolah" id="provinsiSekolah">
+                <option>Pilih Provinsi</option>
+                <option>Sulawei Selatan</option>
+              </select>
             </div>
-            <div class="input-group">
-              <label for="phone">Phone Number</label>
-              <input type="number" name="phone" id="phone" />
+            <div class="mb-3">
+              <label for="kabupateniSekolah">Kabupaten Sekolah</label>
+              <select class="form-control" name="kabupatenSekolah" id="kabupatenSekolah">
+                <option>Pilih Kabupaten/Kota Sekolah</option>
+                <option>Sulawei Selatan</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="kecamatanSekolah">Kecamatan Sekolah</label>
+              <select class="form-control" name="kecamatanSekolah" id="kecamatanSekolah">
+                <option>Pilih Kecamatan Sekolah</option>
+                <option>Sulawei Selatan</option>
+              </select>
             </div>
             <div class="btns-group">
               <a href="#" class="btn btn-prev">Back</a>
@@ -235,17 +219,36 @@
 
           <!-- Form item - Social -->
           <div class="form-step">
-            <div class="input-group">
-              <label for="instagram">Instagram Username</label>
-              <input type="text" name="instagram" id="instagram" />
+            <div class="row mb-3">
+              <label for="">Skala Nilai: 1 - 100</label>
+              <div class="col-lg-6">
+                <label for="mtk-sem-3">Matematika Semester 3</label>
+                <input class="form-control" type="text" name="mtk-sem-3" id="mtk-sem-3" />
+              </div>
+              <div class="col-lg-6">
+                <label for="mtk-sem-4">Matematika Semester 4</label>
+                <input class="form-control" type="text" name="mtk-sem-4" id="mtk-sem-4" />
+              </div>
             </div>
-            <div class="input-group">
-              <label for="text">Twitter Username</label>
-              <input type="text" name="twitter" id="twitter" />
+            <div class="row mb-3">
+              <div class="col-lg-6">
+                <label for="ipa-sem-3">IPA Semester 3</label>
+                <input class="form-control" type="text" name="ipa-sem-3" id="ipa-sem-3" />
+              </div>
+              <div class="col-lg-6">
+                <label for="ipa-sem-4">IPA Semester 4</label>
+                <input class="form-control" type="text" name="ipa-sem-4" id="ipa-sem-4" />
+              </div>
             </div>
-            <div class="input-group">
-              <label for="github">Github Username</label>
-              <input type="text" name="github" id="github" />
+            <div class="row mb-3">
+              <div class="col-lg-6">
+                <label for="ipa-sem-3">Bahasa Inggris Semester 3</label>
+                <input class="form-control" type="text" name="ipa-sem-3" id="ipa-sem-3" />
+              </div>
+              <div class="col-lg-6">
+                <label for="bhsInggris-sem-4">Bahasa Inggris Semester 4</label>
+                <input class="form-control" type="text" name="bhsInggris-sem-4" id="bhsInggris-sem-4" />
+              </div>
             </div>
             <div class="btns-group">
               <a href="#" class="btn btn-prev">Back</a>
@@ -255,32 +258,34 @@
 
           <!-- Form item - Password -->
           <div class="form-step">
-            <div class="input-group">
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+            <div class="mb-3">
+              <h2>Jalur Pendaftaran</h2>
+              <select class="form-control" name="jalurPendaftaran" id="jalurPendaftaran">
+                <option>Jalur Pendaftaran</option>
+                <option>Sulawei Selatan</option>
+              </select>
             </div>
-            <div class="input-group">
-              <label for="confirmPassword">Confirm Password</label>
-              <input type="password" name="confirmPassword" id="confirmPassword" />
+            <div class="row mb-3">
+              <div class="col-lg-6">
+                <select class="form-control" name="jurusan1" id="jurusan1">
+                  <option>Pilihan Jurusan 1</option>
+                  <option>Sulawei Selatan</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <select class="form-control" name="jurusan2" id="jurusan2">
+                  <option>Pilihan Jurusan 2</option>
+                  <option>Sulawei Selatan</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <h2>Kode Referral:</h2>
+              <input class="form-control" type="text" name="kodeReferral" id="kodeReferral" placeholder="Masukkan Kode Referral Anda"/>
             </div>
             <div class="btns-group">
-              <a href="#" class="btn btn-prev">Back</a>
-              <a href="#" class="btn btn-next">Next</a>
-            </div>
-          </div>
-
-          <div class="form-step">
-            <div class="input-group">
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
-            </div>
-            <div class="input-group">
-              <label for="confirmPassword">Confirm Password</label>
-              <input type="password" name="confirmPassword" id="confirmPassword" />
-            </div>
-            <div class="btns-group">
-              <a href="#" class="btn btn-prev">Back</a>
-              <input type="submit" value="Register" class="btn" />
+              <a href="#" class="btn btn-outline-danger">Back</a>
+              <input type="submit" value="Daftar" class="btn"/>
             </div>
           </div>
         </form>
