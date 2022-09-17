@@ -1,9 +1,8 @@
-/* font-family: 'Kanit', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
 
-p {
-  font-family: 'Roboto', sans-serif;
+* {
+  font-family: 'Nunito', sans-serif;
 }
+
 
 .header {
   position: sticky;
@@ -12,7 +11,6 @@ p {
 }
 
 .nav-item a {
-  font-family: 'Kanit', sans-serif;
   font-weight: 400;
 }
 
@@ -32,12 +30,10 @@ p {
 
 .judul1 {
   font-size: 36px;
-  font-family: 'Kanit', sans-serif;
 }
 
 .judul2 {
   font-size: 25px;
-  font-family: 'Kanit', sans-serif;
 }
 
 .text {
@@ -69,11 +65,9 @@ p {
 
 .jpen, .jalurPendaftar {
   font-size: 40px;
-  font-family: 'Kanit', sans-serif;
 }
 
 .media-title {
-  font-family: 'Kanit', sans-serif;
   font-size: 30px;
 }
 
@@ -119,12 +113,7 @@ p {
   position: relative;
 }
 
-.jadwal-title{
-  font-family: 'Kanit', sans-serif;
-}
-
 .jadwal-title p {
-  font-family: 'Kanit', sans-serif;
   font-weight: 500;
   font-size: 25px;
 }
@@ -135,7 +124,6 @@ p {
 }
 
 .jadwal-bagian p{
-  font-family: 'Kanit', sans-serif;
   font-weight: 500;
   font-size: 25px;
   color: #dc3545;
@@ -152,7 +140,6 @@ p {
 /* footer */
 
 .tentang-kami h3 {
-  font-family: 'Kanit', sans-serif;
   font-weight: 500;
 }
 
