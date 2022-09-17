@@ -138,6 +138,7 @@ label {
   text-decoration: none;
   text-align: center;
 }
+
 .text-center a {
   text-decoration: none;
   font-size: 14px;
@@ -148,6 +149,7 @@ label {
   position: relative;
   display: flex;
   justify-content: space-between;
+  width: 98%;
   counter-reset: step;
   margin: 2rem 0 4rem;
 }
@@ -199,7 +201,7 @@ label {
 /* Styles for Form. */
 .form {
   /* width: 30rem; */
-  margin: 0 auto;
+  margin: auto;
   /* border: 1px solid #ccc; */
   border-radius: 0.35rem;
   padding: 1.5rem;
