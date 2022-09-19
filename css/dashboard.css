@@ -259,6 +259,10 @@ label {
   font-size: 20px;
 }
 
+.active {
+  color: #dc3545 !important;
+}
+
 /* Responsive Style */
 @media (max-width: 850px) {
   .form {
@@ -286,5 +290,9 @@ label {
 
   .sidebar {
     padding: 78px 0 0;
+  }
+
+  li .nav-link:hover {
+    color: #dc3545;
   }
 }

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="A. Muh. Afrial Ivan Pratama">
+    <title>PPDB | Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- My CSS -->
+    <link href="css/admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom  navbar-dark sticky-top bg-dark flex-md-nowrap shadow">
+        <!-- <button class="navbar-toggler position-absolute collapse d-md-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <button class="navbar-toggler rounded-1 d-md-none collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="width: 35px; height: 35px;"></span>
+                </button>
+
+                <a href="/" class="mb-2 mb-lg-0 text-light text-decoration-none brand fw-bold">
+                    PPDB
+                </a>
+                <div class="dropdown d-block ms-auto">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="42" height="42" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item side">
+                            <a class="nav-link" aria-current="page" href="dashboard.html">
+                                <i class="bi bi-clipboard2-minus-fill"></i>
+                                Pendaftaran
+                            </a>
+                        </li>
+                        <li class="nav-item side">
+                            <a class="nav-link" href="profil.html">
+                                <i class="bi bi-person-fill"></i>
+                                Profil
+                            </a>
+                        </li>
+                        <li class="nav-item side">
+                            <a class="nav-link active" href="admin.html">
+                                <i class="bi bi-people-fill"></i>
+                                Data Siswa
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                
+                
+                <div class="table-responsive" style="height: 500px;">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="fs-1 fw-bold mb-4">Data Siswa</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+    
+                        </div>
+                    </div>
+
+                    <table class="table table-striped table-hover" style="width: 4000px;">
+                        <tr>
+                            <th style="width: 150px;">
+                                Aksi
+                            </th>
+                            <th>
+                                Foto
+                            </th>
+                            <th style="width: 100px;">
+                                NISN
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Tempat Lahir
+                            </th>
+                            <th>
+                                No. HP Siswa
+                            </th>
+                            <th>
+                                Jenis Kelamin
+                            </th>
+                            <th>
+                                Agama
+                            </th>
+                            <th>
+                                Alamat
+                            </th>
+                            <th>
+                                Asal Sekolah
+                            </th>
+                            <th>
+                                Alamat Sekolah
+                            </th>
+                            <th>
+                                Provinsi Sekolah
+                            </th>
+                            <th>
+                                Kabupaten Sekolah
+                            </th>
+                            <th>
+                                Kecamatan Sekolah
+                            </th>
+                            <th>
+                                MTK Semester 3
+                            </th>
+                            <th>
+                                MTK Semester 4
+                            </th>
+                            <th>
+                                IPA Semester 3
+                            </th>
+                            <th>
+                                IPA Semester 4
+                            </th>
+                            <th>
+                                BHS Inggris Semester 3
+                            </th>
+                            <th>
+                                BHS Inggris Semester 4
+                            </th>
+                            <th>
+                                Jalur Pendaftaran
+                            </th>
+                            <th>
+                                Jurusan 1
+                            </th>
+                            <th>
+                                Jurusan 2
+                            </th>
+                            <th>
+                                Kode Referral
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="" class="btn btn-primary"><i class="bi bi-check-circle-fill"></i></a>
+                                <a href="" class="btn btn-danger"><i class="bi bi-x-circle-fill"></i></a>
+                            </td>
+                            <td>
+                                <img src="https://github.com/mdo.png" width="50" height="50" alt="">
+                            </td>
+                            <td style="width: 100px;">
+                                NISN
+                            </td>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Tempat Lahir
+                            </td>
+                            <td>
+                                No. HP Siswa
+                            </td>
+                            <td>
+                                Jenis Kelamin
+                            </td>
+                            <td>
+                                Agama
+                            </td>
+                            <td>
+                                Alamat
+                            </td>
+
+                            <td>
+                                Asal Sekolah
+                            </td>
+                            <td>
+                                Alamat Sekolah
+                            </td>
+                            <td>
+                                Provinsi Sekolah
+                            </td>
+                            <td>
+                                Kabupaten Sekolah
+                            </td>
+                            <td>
+                                Kecamatan Sekolah
+                            </td>
+                            <td>
+                                MTK Semester 3
+                            </td>
+                            <td>
+                                MTK Semester 4
+                            </td>
+                            <td>
+                                IPA Semester 3
+                            </td>
+                            <td>
+                                IPA Semester 4
+                            </td>
+                            <td>
+                                BHS Inggris Semester 3
+                            </td>
+                            <td>
+                                BHS Inggris Semester 4
+                            </td>
+                            <td>
+                                Jalur Pendaftaran
+                            </td>
+                            <td>
+                                Jurusan 1
+                            </td>
+                            <td>
+                                Jurusan 2
+                            </td>
+                            <td>
+                                Kode Referral
+                            </td>
+                        </tr>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </main>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
+    </script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
